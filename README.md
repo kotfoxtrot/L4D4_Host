@@ -16,9 +16,11 @@
 
 - Availability of pre-existing images
 ```js
-GET /host/:id
+http://youdomain.com/host/:id
 ```
+I recommend using subdomains host.youdomain.com
 
+#
 <img src='./PhotoshopFile/preview.gif' width='100%' >
 
 
@@ -40,5 +42,6 @@ GET /host/:id
 
 - Наличие уже готовых изображений
 ```js
-GET /host/:id
+http://твойдомен.com/host/:id
 ```
+Рекомендую использовать поддомен host.твойдомен.com
