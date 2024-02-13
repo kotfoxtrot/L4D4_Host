@@ -1,19 +1,19 @@
 FROM node:18-alpine
 
-# создание директории приложения
+# Create application directory
 WORKDIR /usr/src/app
 
-# установка зависимостей
-# символ астериск ("*") используется для того чтобы по возможности
-# скопировать оба файла: package.json и package-lock.json
+# Install dependencies
+# The asterisk ("*") is used to copy both files: package.json and package-lock.json
 COPY package*.json ./
 
 RUN npm install && npm cache clean --force
-# Если вы создаете сборку для продакшн
-# RUN npm ci --omit=dev
 
-# копируем исходный код
+# Copy app code
 COPY . .
 
+# Run EXPOSE
 EXPOSE 3030
+
+#Run service
 CMD [ "node", "index.js" ]
