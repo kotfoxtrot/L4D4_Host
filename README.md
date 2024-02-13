@@ -17,7 +17,7 @@
 GET /host/:id
 ```
 
-![Preview Gif](https://github.com/EtoZheSandy/L4D4_Host/blob/master/PhotoshopFile/preview.gif)
+<img src='./PhotoshopFile/preview.gif' width='100%' >
 
 
 # L4D4 Hosts
