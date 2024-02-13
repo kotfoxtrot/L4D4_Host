@@ -16,39 +16,28 @@
   </head>
 
   <body scroll="no">
-    <% if (server == 1) { %>
-    <img src="/<%= season %>/Perk1.png" class="img" border="0" />
-    <% } else if (server == 2) { %>
-    <img src="/<%= season %>/Perk2.png" class="img" border="0" />
-    <% } else if (server == 3) { %>
-    <img src="/<%= season %>/Perk3.png" class="img" border="0" />
-    <% } else if (server == 4) { %>
-    <img src="/<%= season %>/VS.png" class="img" border="0" />
-    <% } else if (server == 5) { %>
-    <img src="/<%= season %>/Realism.png" class="img" border="0" />
-    <% } else if (server == 6) { %>
-    <img src="/<%= season %>/hard.png" class="img" border="0" />
-    <% } else if (server == 7) { %>
-    <img src="/<%= season %>/elite.png" class="img" border="0" />
-    <% } else if (server == 8) { %>
-    <img src="/<%= season %>/maps.png" class="img" border="0" />
-    <% } else if (server == 9) { %>
-    <img src="/<%= season %>/sky.png" class="img" border="0" />
-    <% } else if (server == 10) { %>
-    <img src="/<%= season %>/mutant.png" class="img" border="0" />
-    <% } else if (server == 11) { %>
-      <img src="/<%= season %>/cup.png" class="img" border="0" />
-    <% } else if (server == 12) { %>
-      <img src="/<%= season %>/weekend.png" class="img" border="0" />
-    <% } else if (server == 13) { %>
-      <img src="/<%= season %>/Rework.png" class="img" border="0" />
-    <% } else if (server == 20) { %>
-    <img src="/<%= season %>/EU.png" class="img" border="0" />
-    <% } else if (server == 21) { %>
-    <img src="/<%= season %>/EU.png" class="img" border="0" />
+    <% const serverImages = {
+      1: 'Perk1.png',
+      2: 'Perk2.png',
+      3: 'Perk3.png',
+      4: 'VS.png',
+      5: 'Realism.png',
+      6: 'hard.png',
+      7: 'elite.png',
+      8: 'maps.png',
+      9: 'sky.png',
+      10: 'mutant.png',
+      11: 'cup.png',
+      12: 'weekend.png',
+      13: 'Rework.png',
+      20: 'EU.png',
+      21: 'EU.png'
+    }; %>
 
+    <% if (serverImages[server]) { %>
+      <img src="/<%= season %>/<%= serverImages[server] %>" class="img" border="0" />
     <% } else { %>
-    <img src="/<%= season %>/else.png" class="img" border="0" />
+      <img src="/<%= season %>/else.png" class="img" border="0" />
     <% } %>
   </body>
 </html>
