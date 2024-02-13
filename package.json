@@ -4,7 +4,7 @@
   "description": "Hosts окно",
   "main": "index.js",
   "scripts": {
-    "s": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "endurance",
