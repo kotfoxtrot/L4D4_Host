@@ -1,3 +1,24 @@
+# L4D4 Hosts
+
+## Features of this project
+
+- Dynamically changes the image folder based on the season
+
+- Comes with default 4 seasons and a Photoshop (.psd) file for editing or adding new images
+
+- Retrieve server image by ID
+
+- Image stretching based on screen size
+
+- Includes pre-existing images
+
+- Docker file for deploying as a microservice behind a reverse proxy
+```js
+GET /host/:id
+```
+
+![Preview Gif](https://github.com/EtoZheSandy/L4D4_Host/blob/master/PhotoshopFile/preview.gif)
+
 
 # L4D4 Hosts
 
