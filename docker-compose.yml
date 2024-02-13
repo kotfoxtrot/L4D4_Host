@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  hosts:
+    build:
+      context: .
+    expose:
+      - 3030
+    restart: always
+    volumes:
+      - .:/app
+
+
+networks:
+  default:
+    external: true
+    name: evilcorp
