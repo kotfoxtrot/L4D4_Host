@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  hosts:
+  l4d4_host:
     build:
       context: .
     expose:
@@ -11,6 +11,7 @@ services:
       - .:/app
 
 
+# docker network create -d bridge evilcorp
 networks:
   default:
     external: true

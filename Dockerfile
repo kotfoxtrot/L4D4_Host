@@ -1,13 +1,13 @@
-FROM node:18-alpine
+FROM node:20-alpine
 
 # Create application directory
 WORKDIR /usr/src/app
 
-# Install dependencies
 # The asterisk ("*") is used to copy both files: package.json and package-lock.json
 COPY package*.json ./
 
-RUN npm install && npm cache clean --force
+# Install dependencies
+RUN npm install
 
 # Copy app code
 COPY . .
