@@ -1,4 +1,4 @@
-# L4D4 Hosts
+# L4D4 Host
 
 ## Features of this project
 
@@ -24,7 +24,7 @@ I recommend using subdomains host.youdomain.com
 <img src='./PhotoshopFile/preview.gif' width='100%' >
 
 
-# L4D4 Hosts
+# L4D4 Host
 
 ## Возможности данного проекта
 
