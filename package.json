@@ -1,14 +1,15 @@
 {
-  "name": "hosts_v1",
-  "version": "0.0.1",
-  "description": "Hosts окно",
+  "name": "L4D4_Host",
+  "version": "0.1.1",
+  "description": "Host.txt Banner Dynamic update",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [
     "endurance",
-    "hosts",
+    "host",
+    "host.txt",
     "L4D4"
   ],
   "author": "Sandy",
