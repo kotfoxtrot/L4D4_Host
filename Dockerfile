@@ -13,7 +13,7 @@ RUN npm install
 COPY . .
 
 # Run EXPOSE
-EXPOSE 3030
+EXPOSE 3050
 
 #Run service
 CMD [ "node", "index.js" ]

@@ -4,15 +4,8 @@ services:
   l4d4_host:
     build:
       context: .
-    expose:
-      - 3030
+    ports:
+      - "3050:3050"
     restart: always
     volumes:
       - .:/app
-
-
-# docker network create -d bridge evilcorp
-networks:
-  default:
-    external: true
-    name: evilcorp

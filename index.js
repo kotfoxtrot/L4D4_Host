@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 // Constants
-const PORT = 3030;
+const PORT = 3050;
 const HOST = '0.0.0.0';
 
 // Add ejs ejs generate
